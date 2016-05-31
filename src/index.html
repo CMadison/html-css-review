@@ -1,0 +1,72 @@
+Solution to HTML question 1
+<!DOCTYPE html>
+
+<head>
+</head>
+
+<body>
+
+</body>
+
+Solution to HTML question 2
+
+Img element is calling an image from a location, while the div element is typically a transparent box.
+
+
+Solution to CSS question 1
+<!-- Inline CSS -->
+<div style="background-color: red;"></div>
+
+<!-- Internal style sheet -->
+<style type="text/css">
+  div {
+    background-color: red;
+  }
+</style>
+
+<!-- External style sheet (not shown) -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+All 3 methods will work for changing the background color to red.
+
+Inline CSS is not best practice, and should be limited in it's use if used at all.
+
+Internal style sheets again are not best practice, and should be limited in it's use if used at all.
+
+External style sheets are best practice, as they seperate the development concerns. Additonally, like internal style sheets, external styles sheets are far more flexible than inline css, as it allows the developer to add CSS styles to each of the div vs. just one.
+
+Solution to CSS question 2
+<style type="text/css">
+/* comment like this */
+
+/* border radius will start to round the corners of each div element. It starts in the top left corner and the values for each position iterate clockwise, much like padding or margin. This selector will edit all divs on the page.
+div {
+  border-radius: 50%;
+}
+*/
+
+/* This selector will apply a font size of 18px to all "header" elements with a "paragraph" element as the parent.
+.header p {
+  font-size: 18px;
+}
+*/
+/* This will absolutley position anything wil the footer class to the bottom of the page.
+.footer {
+  position: absolute;
+  bottom: 0;
+}
+*/
+/* The .splash-image class will inherit the properties denoted after the curly brace.
+.splash-image {
+  background-image: url("../images/ocean.jpg");
+  background-size: cover;
+  width: 100%;
+}
+*/
+/* Not sure what this does.
+.ninja:hover {
+  display: none;
+  color: black;
+}
+*/
+</style>
